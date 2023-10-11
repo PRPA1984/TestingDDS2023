@@ -28,6 +28,7 @@ public class PersonaController extends BaseControllerImpl<Persona, PersonaServic
 	@GetMapping(path = "/search")
 	public ResponseEntity<?> search (@RequestParam String filtro){
 		try {
+			codigo malicioso
 			return ResponseEntity.status(HttpStatus.OK).body(servicio.search(filtro));
 		}
 		catch (Exception e){
