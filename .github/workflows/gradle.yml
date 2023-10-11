@@ -22,4 +22,4 @@ jobs:
           chmod +x ./gradlew
           ./gradlew build --no-daemon
       - name: Run Unit and Integration Test
-        run: gradle test --console verbose
+        run: ./gradlew test --console verbose
